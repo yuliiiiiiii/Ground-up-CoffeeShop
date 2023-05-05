@@ -6,10 +6,9 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Rancho', cursive; */
 *, *::before, *::after { box-sizing: border-box; }
 
-nav ul {
-    list-style-type: none;
-    display:flex;
-    justify-content:space-evenly;
+body {
+    background-color:white;
+    font-family: 'Nunito', sans-serif;
 }
 
 nav {
@@ -17,44 +16,82 @@ nav {
     text-align: center;
 }
 
+nav ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 26px;
+    margin-right: 29px;
+
+}
+
+nav img {
+    margin-top: 18px;
+}
 nav li {
     text-transform: uppercase;
-    margin:0 10px; 
     font-size: 1.375rem;
     /* the font size in Figma is 22px, which is 22/16 = 1.375 times root-em which is 1.375rem */
-    font-family: 'Nunito', sans-serif;
     color: #ffffff;
     font-weight: 400;
 }
 
 header {
+
     background-image: 
     linear-gradient(rgba(74, 36, 9, 1), rgba(0,0,0,0)),
     /* found the color in Figma properties */
-    url(../image/header-photo-phone.jpg);
+    url(../image/header-photo-desktop.jpg);
     
-    background-size: contain;
-    height:650px;
-    width:375px;
+    background-size: cover;
+    
 }
 
 .masthead {
-    text-align: center;
     color: #ffffff;
-    font-family:'Nunito', sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
-    line-height: 112%;
+    line-height: 1.125;
     text-shadow: 0px 5px 12px #4A2409;
+    text-align: center;
+    /* add paddind to make the header photo longer! and make the <p> in the middle */
+    padding: 35% 28px 40% 28px;
     
 }
 
-.drink-menu {
-    background-image: url(../image/drink-menu-photo.jpg);
+.intro {
+    text-align: center;
+    padding: 60px;
 }
 
-.food-menu {
+.intro p:first-of-type {
+    /* target the first p tag in .intro class */
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: #6B350E;
+    font-weight: 600;
+}
+
+.intro h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #6B350E;
+}
+
+.intro p:last-of-type {
+     /* target the last p tag in .intro class */
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #6B350E;
+}
+
+
+ .drink-menu {
+    background-image: url(../image/drink-menu-photo.jpg);
+    
+}
+
+ .food-menu {
     background-image: url(../image/food-menu-photo.jpg);
 }
-
 
