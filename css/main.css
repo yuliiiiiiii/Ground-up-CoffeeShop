@@ -4,4 +4,57 @@ font-family: 'Medula One', cursive;
 font-family: 'Nunito', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Rancho', cursive; */
+*, *::before, *::after { box-sizing: border-box; }
+
+nav ul {
+    list-style-type: none;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+nav {
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+nav li {
+    text-transform: uppercase;
+    margin:0 10px; 
+    font-size: 1.375rem;
+    /* the font size in Figma is 22px, which is 22/16 = 1.375 times root-em which is 1.375rem */
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+header {
+    background-image: 
+    linear-gradient(rgba(74, 36, 9, 1), rgba(0,0,0,0)),
+    /* found the color in Figma properties */
+    url(../image/header-photo-phone.jpg);
+    
+    background-size: contain;
+    height:650px;
+    width:375px;
+}
+
+.masthead {
+    text-align: center;
+    color: #ffffff;
+    font-family:'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 112%;
+    text-shadow: 0px 5px 12px #4A2409;
+    
+}
+
+.drink-menu {
+    background-image: url(../image/drink-menu-photo.jpg);
+}
+
+.food-menu {
+    background-image: url(../image/food-menu-photo.jpg);
+}
+
 
