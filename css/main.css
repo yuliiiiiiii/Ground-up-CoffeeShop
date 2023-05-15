@@ -14,26 +14,37 @@ body {
 nav {
     /* background-color: aqua; */
     text-align: center;
+    padding:0 15px 0;
+    /* T R-L B */
 }
 
 nav ul {
-    list-style-type: none;
+    list-style-type: none; 
     display:flex;
-    justify-content: space-around;
-    margin-top: 26px;
-    margin-right: 29px;
-
+    justify-content: center;
+    margin:0;
+    padding:0;
+    /* to remove the extra space on the left, can find where is the space from website inspect tool */
+}
+nav ul a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 nav img {
     margin-top: 18px;
+    width:223.95px;
+    height:47px;
+    margin-bottom: 26px;
 }
 nav li {
     text-transform: uppercase;
     font-size: 1.375rem;
     /* the font size in Figma is 22px, which is 22/16 = 1.375 times root-em which is 1.375rem */
-    color: #ffffff;
     font-weight: 400;
+    white-space: nowrap;
+    padding:0 15px;
+    
 }
 
 header {
@@ -55,13 +66,13 @@ header {
     text-shadow: 0px 5px 12px #4A2409;
     text-align: center;
     /* add paddind to make the header photo longer! and make the <p> in the middle */
-    padding: 35% 28px 40% 28px;
+    padding: 12% 28px;
     
 }
 
 .intro {
     text-align: center;
-    padding: 60px;
+    padding: 60px 23px 30px 23px;
 }
 
 .intro p:first-of-type {
@@ -85,13 +96,185 @@ header {
     color: #6B350E;
 }
 
+section h2{
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    font-weight: 700;
+    color: #6B350E;
+    text-align: bottom;
+}
 
- .drink-menu {
-    background-image: url(../image/drink-menu-photo.jpg);
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #6B350E;
+}
+
+section {
+    padding:30px 24px;
+    /* T-B R-L */
+}
+
+section img{
+    width:100%;
+    /* to show the full img in the screen. not a part of it */
+    border-radius: 20px;
+    /* make imgs rounded corner */
+    display: block;
+    /* to put photos on the baseline */
+}
+
+#feature-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.coffee-shop-sign {
+    width: 96.08px;
+    height: 113.55px;
+    margin-top:30px;
+    margin-bottom: 30px;
+
+}
+
+#menu-wrapper{
+    padding:0 0 60px;
+
+} 
+
+ /* .drink-menu img{ */
+    /* background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0),rgba(74, 36, 9, 1)), 
+    url(../image/drink-menu-photo.jpg); 
+    background-size: cover; */
+    /* border-radius: 20px; */
+    /* padding-top: 100px;
+    display: block; */
+
+/* } */
+
+ /* .food-menu img{ */
+    /* background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0),rgba(74, 36, 9, 1)),
+    url(../image/food-menu-photo.jpg);  
+    background-size: cover; */
+    /* border-radius: 20px; */
+    /* padding:60% 80px 4% 80px;
+    display: block; */
+/* } */
+
+#menu-wrapper img {
+    border-radius: 20px;
+    width:100%;
+    height:auto;
     
 }
+#menu-wrapper a {
+    text-decoration: none; 
+    /* to remove the href underline */
+    text-align: center;
+    /* width: 50%;
+    max-width: 502px; */
+    position: relative;
+    display:block;
+    padding:30px 24px 0; 
 
- .food-menu {
-    background-image: url(../image/food-menu-photo.jpg);
 }
+.label {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    font-weight: 900;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left:0;
+    right:0;
+    padding: 10px;
+}
+
+footer {
+    border-top: 2px solid rgba(107, 53, 14, 0.4);
+    /* find border color and opacity from Figma inspect, css code */
+    padding-top:40px; 
+    padding-bottom:18px;
+    text-align: center;
+}
+footer p{
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    font-weight: 400;
+    color:#6B350E;
+}
+
+footer p:nth-child(1) {
+    font-size:1.375rem;
+    font-weight:800;
+    line-height:1.875;
+}
+
+footer p:nth-last-child(1) {
+    font-weight: 400;
+    font-size:0.875rem;
+    line-height:1.187rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.footer-icons a {
+    padding:7.5px;
+}
+
+.footer-icons {
+    padding-top: 14.5px;
+    padding-bottom: 10.5px;
+}
+
+@media (min-width: 500px) {
+    section {
+        display: flex;
+        align-items: center;
+      }
+    
+      section:nth-child(2) {
+        flex-direction: row-reverse;
+      }
+    
+      section img {
+        width:37%;
+      }
+
+      .wrapper-left {
+        padding-left: 50px;
+      }
+
+      .wrapper-right {
+        padding-right: 50px;
+      }
+    
+      #menu-wrapper {
+        display:flex;
+      }
+}
+@media (min-width: 670px) {
+  nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; 
+  }
+
+  nav img {
+    margin:0;
+    margin-top:15px;
+    margin-left: 25px;
+  }
+
+  nav ul {
+  margin-right: 10px;
+  }
+  
+}
+
+
 

@@ -15,11 +15,11 @@
 <body>
     <header>
       <nav>
-        <img src="image/ground-up-logo.svg" alt="Ground Up Logo">
+        <img src="image/ground-up-logo.svg" alt="Ground Up">
         <ul>
-            <li>Drinks</li>
-            <li>Food</li>
-            <li>About Us</li>
+            <li><a href="drink-menu.html">Drinks</a></li>
+            <li><a href="food-menu.html">Food</a></li>
+            <li><a href="food-menu.html">About Us</a></li>
         </ul>
       </nav>
 
@@ -32,38 +32,50 @@
     <div class="intro">
         <p>Your Friendly neighborhood</p>
         <h1>Coffee Shop in Williamsburg, Brooklyn</h1>
-        <img src="image/espresso-machine-logo.svg" alt="espresso machine logo">
+        <!-- here's only one h1, the most relative to what people searching on google -->
+        <img src="image/espresso-machine-logo.svg" alt="">
         <p>Open Daily 7am – 8pm</p>
     </div>
 
     <div id="feature-wrapper">
-    <section class="feature 1">
-        <img src="image/barista-photo.jpg" alt="batista holding coffee">
+    <section>
+        <img src="image/barista-photo.jpg" alt="barista holding coffee">
+        
+        <div class="wrapper-left">
         <h2>Friendly & knowledgeable baristas</h2>
         <p>Whether you have a favorite drink you want prepared a specific way, or you’re new to coffee and would like recommendations... our baristas are here to help. Feel free to ask questions, or tell them exactly what you want so they can prepare the perfect drink for you.</p>
+        </div>
     </section>
 
-    <section class="feature 2">
-      <img src="image/atmosphere-photo.jpg" alt="street atmosphere">
+    <section>
+      <img src="image/atmosphere-photo.jpg" alt="Seating outside on the street">
+        
+      <div class="wrapper-right">
         <h2>Comfortable, laid-back atmosphere</h2>
         <p>Take your time and enjoy your latte or drink of choice. Having good conversations with friends or a productive business meeting over a great cup of joe. We won’t rush you out.</p>
+      </div>
     </section>
 
-    <section class="feature 3">
-     <img src="image/roasted-beans-photo.jpg" alt="roasted beans">
+    <section>
+     <img src="image/roasted-beans-photo.jpg" alt="">
+      
+      <div class="wrapper-left">
       <h2>Freshly roasted coffee beans</h2>
       <p>We get fresh coffee bean shipments directly from sustainable growers. Then we roast them in-house for optimum freshness. Don’t settle for stale old coffee.</p>
+       </div>
     </section>
-    </div>
 
-   <img src="image/coffee-shop-sign.svg" alt="coffee shop sign">
+   <img src="image/coffee-shop-sign.svg" class="coffee-shop-sign" alt="">
+   </div>
 
    <div id="menu-wrapper">
         <a href="drink-menu.html">
-            <p class="drink-menu">Drink Menu</p>
+            <img src="image/drink-menu-photo.jpg" alt="">
+            <div class="label">Drink Menu</div>
         </a>
         <a href="food-menu.html">
-            <p class="food-menu">Food Menu</p>
+            <img src="image/food-menu-photo.jpg" alt="">
+            <div class="label">Food Menu</div>
         </a>
    </div>
 
@@ -79,7 +91,7 @@
             <a href="https://groundupcoffeeclub.com/"><img src="image/icon-twitter.svg"></a>
             <a href="https://www.instagram.com/groundup_cafeandlounge/?hl=en"><img src="image/icon-instagram.svg"></a>
         </div>
-        <p>Copyright © Ground Up</p>
+        <p>Copyright &COPY; Ground Up</p>
     </footer>
     
 </body>
